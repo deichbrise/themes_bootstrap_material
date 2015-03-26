@@ -22,22 +22,14 @@ keywords:
 
 # Constants categories which are used for constants in this theme
 constants:
-  availableCategories: [theme,colors,font,meta,pages,container,slider,lightbox]
+  availableCategories: [theme,font,meta,pages,container,slider,lightbox]
 
 # Screenshots for the preview gallery (optional, multiple possible)
 screenshots:
   -
     file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot.png
     caption        : Super image 1
-  -
-    file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot-01.png
-    caption        : Super image 2
-  -
-    file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot-01.png
-    caption        : Super image 3
-  -
-    file           : EXT:theme_bootstrap_mosaic/Meta/Screenshots/screenshot-01.png
-    caption        : Super image 4
+
 
 
 # Name of the authors (optional, multiple possible)
