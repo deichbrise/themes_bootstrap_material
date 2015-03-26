@@ -1,2 +1,2 @@
-# cat=colors/general/; type=color; label= Basic: Background Color
-themes.configuration.colors.background = #262526
+# cat=colors/general/; type=color; label= Basic: Control Text Color
+themes.configuration.colors.special-text = #fff

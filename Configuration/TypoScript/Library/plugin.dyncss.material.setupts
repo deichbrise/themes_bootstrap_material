@@ -1,7 +1,7 @@
 plugin.tx_dyncss.overrides {
 
-	body-bg-color = TEXT
-	body-bg-color.value = {$themes.configuration.colors.background}
+	special-text = TEXT
+	special-text.value = {$themes.configuration.colors.special-text}
 
 }
 
