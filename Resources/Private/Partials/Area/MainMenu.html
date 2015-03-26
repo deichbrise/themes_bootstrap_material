@@ -1,0 +1,31 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
+     lang="en">
+    <f:section name="Default">
+        <!-- theme_bootstrap_mosaic: Partials/Area/MainMenu.html [begin] -->
+        <div id="menuMain" class="navbar navbar-dark navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <div id="logoWrapper" class="navbar-brand">
+                        <h1><f:cObject typoscriptObjectPath="lib.header.logo.main" /></h1>
+                    </div>
+                    <button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar-main" class="navbar-collapse collapse">
+                    <ul class="toggle-nav nav navbar-nav navbar-right">
+                        <li><a class="toogle-sidenav" href="#sidenav"><i class="mdi-navigation-more-vert"></i></a></li>
+                    </ul>
+                    <f:cObject typoscriptObjectPath="lib.menu.main" />
+
+                </div>
+                <div class="toogle-nav">
+
+                </div>
+            </div>
+        </div>
+    </f:section>
+</div>
