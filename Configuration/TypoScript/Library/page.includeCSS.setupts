@@ -1,0 +1,5 @@
+page {
+	includeCSS {
+		mosaic = EXT:theme_bootstrap_mosaic/Resources/Private/Dyncss/import.less
+	}
+}

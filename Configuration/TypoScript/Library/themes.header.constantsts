@@ -1,0 +1,11 @@
+#############################################
+# Header: Header constants
+#############################################
+
+# Header info
+#############################################
+# cat=header/header_info/; type=string; label= Header: phone number
+themes.configuration.header.phone = +0 (000) 000-00-00
+
+# cat=header/header_info/; type=string; label= Header: E-Mail address
+themes.configuration.header.email = contact@example.com
