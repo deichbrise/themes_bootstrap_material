@@ -5,6 +5,21 @@
 @baseurlImage:'/typo3conf/ext/themes_bootstrap_business-casual/Resources/Public/Images/';
 @icon-font-path: "../Fonts/";
 
+/* Use CDN font primary */
+.fontMixinCdn (@useFontPrimaryFromCdn) when (@useFontPrimaryFromCdn = 1) {
+  @import url(@fontPrimaryCdnUrl);
+}
+.fontMixinCdn(@useFontPrimaryFromCdn);
+
+/* Use local font primary */
+.fontMixin (@useFontPrimaryFromCdn) when (@useFontPrimaryFromCdn = 0) {
+  @font-face{
+    font-family: @fontPrimaryName;
+    src:url("@{fontPrimaryFilePath}@{fontPrimaryFileEot}?#iefix");
+    src:url("@{fontPrimaryFilePath}@{fontPrimaryFileEot}?#iefix") format("eot"),url("@{fontPrimaryFilePath}@{fontPrimaryFileWoff}") format("woff"),url("@{fontPrimaryFilePath}@{fontPrimaryFileTtf}") format("truetype"),url("@{fontPrimaryFilePath}@{fontPrimaryFileSvg}") format("svg");
+  }
+}
+.fontMixin(@useFontPrimaryFromCdn);
 
 
 @brand-primary: #777;
