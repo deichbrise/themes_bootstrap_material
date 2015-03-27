@@ -14,6 +14,14 @@
   -ms-transform: translateX(250px); /* IE 9 */
   -webkit-transform: translateX(250px); /* Safari */
   transform: translateX(250px);
+
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    -ms-transform: translateX(0); /* IE 9 */
+    -webkit-transform: translateX(0); /* Safari */
+    transform: translateX(0);
+  }
 }
 .toggle-nav {
   > li {
@@ -23,4 +31,21 @@
     }
   }
 
+}
+
+.nav.navbar-nav {
+  > li {
+    > a {
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+}
+.nav-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  backgroud-color: rgba(0,0,0,0.3);
 }

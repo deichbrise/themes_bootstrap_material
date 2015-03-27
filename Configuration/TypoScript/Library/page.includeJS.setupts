@@ -17,7 +17,7 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
-		theme = EXT:theme_bootstrap/Resources/Public/JavaScript/default.js
+		theme = EXT:theme_bootstrap_material/Resources/Public/JavaScript/default.js
 		theme {
 			external = 0
 			disableCompression = 1
