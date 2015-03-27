@@ -44,8 +44,15 @@
   }
 }
 .nav-overlay {
+  top: 0;
   position: fixed;
   height: 100%;
   width: 100%;
-  backgroud-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0);
+  z-index: 1001;
+  transition: all 0.5s ease-in-out;
+  &.active {
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.5s ease-in-out;
+  }
 }

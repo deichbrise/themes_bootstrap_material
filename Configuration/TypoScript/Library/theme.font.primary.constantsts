@@ -1,0 +1,27 @@
+#############################################
+# Font: Primary-Font constants
+#############################################
+
+# cat=font; type=options[0,1]; label= Use font from CDN?
+themes.configuration.font.primary.useFontFromCdn = 1
+
+# cat=font; type=string; label= Font-Primary: CDN-Fonts URL (Google-Webfonts, ...)
+themes.configuration.font.primary.fontCdnUrl = http://fonts.googleapis.com/css?family=Ubuntu
+
+# cat=font; type=string; label= Font-Primary: Font Name
+themes.configuration.font.primary.fontName = Ubuntu
+
+# cat=font; type=string; label= Font-Primary: Path for local Fonts
+themes.configuration.font.primary.fontFilePath =
+
+# cat=font; type=string; label= Font-Primary: Filename of EOT-Font
+themes.configuration.font.primary.fontFileEot =
+
+# cat=font; type=string; label= Font-Primary: Filename of SVG-Font
+themes.configuration.font.primary.fontFileSvg =
+
+# cat=font; type=string; label= Font-Primary: Filename of TTF-Font
+themes.configuration.font.primary.fontFileTtf =
+
+# cat=font; type=string; label= Font-Primary: Filename of WOFF-Font
+themes.configuration.font.primary.fontFileWoff =
