@@ -7,25 +7,20 @@
 <div class="wrapper">
     <!-- Topic Header -->
     <div class="topic">
-        <div class="container">
+
+    </div>
+        <main id="areaMain" class="row">
             <div class="row">
                 <div class="col-sm-12">
                     <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <main id="areaMain" class="row">
             <f:render section="Default"/>
         </main>
 
         <section id="areaExtended" class="row">
             <f:cObject typoscriptObjectPath="lib.content.extended"/>
         </section>
-    </div>
 </div>
 <f:render partial="Area/Footer" section="Default" arguments="{_all}"/>
 </div>
