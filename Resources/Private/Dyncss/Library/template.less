@@ -101,7 +101,9 @@ p {
   background-color: @brand-primary;
 }
 #areaFooter {
+  margin-top: 0;
   background-color: @brand-primary;
+  border-top: none;
   .container {
     .menu-special-wrapper {
       > ul {
@@ -223,8 +225,17 @@ body {
   margin-bottom: 0px;
 }
 #contentMain {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  > .content-column{
+    margin: 2rem;
+    padding: 0 2rem;
+    background-color: #fff;
+    &:extend(.z-depth-1);
+    padding-bottom: 4rem;
+  }
+
+}
+#contentMenu {
+  padding-right: 0;
   background-color: #fff;
   &:extend(.z-depth-1);
 }
@@ -232,10 +243,40 @@ body {
   display: none;
 }
 .footline {
-  margin-right: 2rem;
+  margin-right: 0;
   > li {
     a {
       color: @grey-1;
     }
+  }
+}
+.nav {
+  > li {
+    > a {
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}
+.nav.nav-pills {
+  padding-top: 4rem;
+  > li {
+    margin-top: 0;
+    > a {
+      font-weight: 500;
+      color: @grey-1;
+
+      &:hover {
+        border-radius: 0;
+      }
+    }
+    &.active {
+
+      > a {
+        border-radius: 0;
+        color: #fff;
+      }
+    }
+
+
   }
 }
