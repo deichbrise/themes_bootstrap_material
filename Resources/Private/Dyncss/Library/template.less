@@ -202,6 +202,7 @@ p {
 }
 
 ol.breadcrumb {
+  margin-bottom: 0;
   background-color: #fff;
   border-radius: 0;
 
@@ -220,17 +221,21 @@ ol.breadcrumb {
 }
 body {
   background-color: #f0f0f0;
+
+  > .wrapper {
+    overflow-x: hidden;
+  }
 }
 .navbar {
   margin-bottom: 0px;
 }
 #contentMain {
+  padding-right: 0;
   > .content-column{
-    margin: 2rem;
-    padding: 0 2rem;
+    margin: 4rem 0 4rem 0rem;
     background-color: #fff;
     &:extend(.z-depth-1);
-    padding-bottom: 4rem;
+    padding: 0 2rem 4rem;
   }
 
 }
@@ -238,6 +243,24 @@ body {
   padding-right: 0;
   background-color: #fff;
   &:extend(.z-depth-1);
+}
+#templateMenuContent {
+  position: relative;
+
+  #contentMenu{
+    @media (min-width: @screen-md-min) {
+      position: absolute;
+      height: 100%;
+    }
+
+  }
+
+  #contentMain {
+    @media (min-width: @screen-md-min) {
+      margin-left: 16.666666%;
+    }
+
+  }
 }
 #areaFeature {
   display: none;
